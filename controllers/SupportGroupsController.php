@@ -225,6 +225,8 @@ class SupportGroupsController extends Controller
         $searchModel->support_group_id = $id;
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+
+
         return $this->render('clients-list', [
             'dataProvider' => $dataProvider,
             'searchModel'  => $searchModel,

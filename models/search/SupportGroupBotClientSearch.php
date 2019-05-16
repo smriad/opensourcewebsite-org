@@ -58,6 +58,7 @@ class SupportGroupBotClientSearch extends SupportGroupBotClient
             return $dataProvider;
         }
 
+
         $query->andFilterWhere([
             'support_group_client.language_code' => $this->language,
             'support_group_client.support_group_id' => $this->support_group_id,
